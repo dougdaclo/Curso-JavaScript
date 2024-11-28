@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Contagem</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar?</h1>
+    </header>
+    <section>
+        <div>
+            Início: <input type="number" id="txtinicio" min="0" max="999">
+        </div>
+        <div>
+            Fim: <input type="number" id="txtfim" min="0" max="1000">
+        </div>
+        <div>
+            Contador: <input type="number" id="cont" min="1" max="10">
+        </div>
+        <div>
+            <input type="button" value="Contar" onclick="contar()">
+            <input type="button" value="Limpar" onclick="limpar()">
+        </div>
+        <div id="prep">Preparando a contagem...</div>
+        <div id="res"></div>
+    </section>
+    <footer>
+        <p>&copy; Ladony Semijoias</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

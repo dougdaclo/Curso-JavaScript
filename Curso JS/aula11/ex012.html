@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    Você é brasileiro? <input type="text" name="txtnac" id="txtnac"> <Km>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtv = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var nac = txtnac.value.trim()
+            res.innerHTML = `<p>Você é <strong>${nac}</strong></p>`
+            if (nac.toLowerCase() === 'brasileiro'){
+                 res.innerHTML = `<p>Você é Brasileiro!</p>`
+            }
+            else {
+                res.innerHTML = `<p> Você é estrangeiro!</p>`
+            }
+             
+        }    
+        </script>
+</body>
+</html>

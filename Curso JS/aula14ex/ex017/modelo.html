@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Tabuadas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos conhecer a tabuada?</h1>
+    </header>
+    <section>
+        <div>
+            Número: 
+            <input type="number" id="num" min="1" max="9">
+            <input type="button" id="seltab" value="Gerar Tabuada" onclick="calcular()">
+        </div>
+        <p>
+            <select name="tabuada" id="tab" size="5">
+                <option>Digite um número acima</option>
+            </select>
+        </p>
+        <div id="res"></div>
+
+    </section>
+    <footer>
+        <p>&copy; Ladony Semijoias</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
